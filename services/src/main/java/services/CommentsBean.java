@@ -20,9 +20,9 @@ public class CommentsBean {
     @PostConstruct
     private void init() {
         comments = new ArrayList<>();
-        comments.add(new Comment(1, UUID.randomUUID().toString(), "Very nice photo!"));
-        comments.add(new Comment(1, comments.get(0).getAuthorId(), "Keep up the good work!"));
-        comments.add(new Comment(1, UUID.randomUUID().toString(), "Beautiful"));
+        //comments.add(new Comment(1, UUID.randomUUID().toString(), "UAuuu!"));
+        //comments.add(new Comment(1, comments.get(0).getAuthorId(), "Lepaa"));
+        //comments.add(new Comment(1, UUID.randomUUID().toString(), "Zelo lepo :D"));
     }
 
     public List<Comment> getComments() {
@@ -35,5 +35,10 @@ public class CommentsBean {
 
         return comments.stream().filter(comment -> comment.getImageId().equals(imageId)).collect(Collectors.toList());
     }
+
+    public void addComment(Comment comment) {
+        comments.add(comment);
+    }
+
 
 }

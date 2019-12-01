@@ -1,6 +1,6 @@
 package v1.resources;
 
-import comments.lib.Comment;
+import lib.Comment;
 import services.CommentsBean;
 
 import javax.enterprise.context.ApplicationScoped;
@@ -46,6 +46,12 @@ public class CommentsResource {
         }
 
         return Response.ok(comments.size()).build();
+    }
+
+    @POST
+    public Response addNewComment(Comment comment) {
+        commentsBean.addComment(comment);
+        return Response.status(Response.Status.OK).entity(commentsBean).build();
     }
 
 }

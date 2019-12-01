@@ -9,12 +9,12 @@ public class Comment {
     private String authorId;
     private String text;
 
-    public Comment(Integer imageId, String authorId, String text) {
+    /*public Comment(Integer imageId, String authorId, String text) {
         this.imageId = imageId;
         this.createdAt = Instant.now();
         this.authorId = authorId;
         this.text = text;
-    }
+    }*/
 
     public Instant getCreatedAt() {
         return createdAt;
