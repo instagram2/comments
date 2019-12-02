@@ -6,7 +6,7 @@
 
     <groupId>instagram2</groupId>
     <artifactId>comments</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
 
     <packaging>pom</packaging>
 
