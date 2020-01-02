@@ -13,7 +13,7 @@ spec:
         app: comments
     spec:
       containers:
-      - image: instagram2/comments:latest
+      - image: instagram2/comments:1.0.0-SNAPSHOT-5.1
         name: comments
         env:
           - name: KUMULUZEE_DISCOVERY_CLUSTER
