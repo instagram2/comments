@@ -1,4 +1,5 @@
-v1/dtos/ApiError.class
-v1/mappers/NotFoundExceptionMapper.class
-v1/CommentsApplication.class
-v1/resources/CommentsResource.class
+v1\mappers\NotFoundExceptionMapper.class
+v1\resources\CommentsResource.class
+META-INF\services\javax.ws.rs.core.Application
+v1\CommentsApplication.class
+v1\dtos\ApiError.class
